@@ -8,24 +8,67 @@
   <body>
     <header>
       <h1>About TechCon 2024</h1>
-      <nav><a href="home.html">Home</a></nav>
-      <nav><a href="schedule.html">Schedule</a></nav>
-      <nav><a href="register.html">Register</a></nav>
-      <nav><a href="contact.html">Contact</a></nav>
+      <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      </nav>
     </header>
 
     <main>
-        <article>
-            <p>History</p>
-            <img src="" alt="">
-        </article>
-        <article>
-            <p>Mission</p>
-        </article>
-        <article>
-            <p>Past Speackers</p>
-            <img src="" alt="">
-        </article>
+      <article id="history" aria-labelledby="history-heading">
+        <h2 id="history-heading">History</h2>
+        <p>TechCon began as a small meetup in 2016 where local developers shared practical tools and workflows. Over the years it evolved into a multi-day conference featuring international speakers, hands-on workshops, and community-led sessions.</p>
+        <figure>
+          <img src="images/history-2016.jpg" alt="Photo of the first TechCon meetup in 2016 showing speakers on stage" />
+          <figcaption>TechCon's first meetup in 2016.</figcaption>
+        </figure>
+        <p>From modest beginnings, TechCon expanded its program to include tracks on web development, machine learning, DevOps, and design, attracting attendees from industry and academia.</p>
+      </article>
+
+      <article id="mission" aria-labelledby="mission-heading">
+        <h2 id="mission-heading">Mission</h2>
+        <p>Our mission is to connect practitioners and leaders to share actionable insights, foster collaboration, and promote ethical use of technology. We prioritize inclusive programming, practical workshops, and networking opportunities.</p>
+        <figure>
+          <img src="images/mission-collaboration.png" alt="Icon representing collaboration and learning" />
+          <figcaption>Collaboration and hands-on learning drive TechCon's programs.</figcaption>
+        </figure>
+      </article>
+
+      <article id="past-speakers" aria-labelledby="speakers-heading">
+        <h2 id="speakers-heading">Past Speakers</h2>
+        <p>TechCon has hosted a number of influential voices in technology. Below are a few notable past speakers and their contributions.</p>
+
+        <section class="speaker" aria-labelledby="speaker-jane">
+          <h3 id="speaker-jane">Jane Doe — CEO, ExampleCorp</h3>
+          <figure>
+            <img src="images/speakers/jane-doe.jpg" alt="Jane Doe speaking at a conference" />
+            <figcaption>Jane Doe delivering a keynote on scalable architectures.</figcaption>
+          </figure>
+          <p>Jane Doe spoke at TechCon 2019 about building resilient distributed systems; her work on open-source tooling helped teams streamline deployments at scale.</p>
+        </section>
+
+        <section class="speaker" aria-labelledby="speaker-alan">
+          <h3 id="speaker-alan">Dr. Alan Smith — Research Lead, InnovateAI</h3>
+          <figure>
+            <img src="images/speakers/alan-smith.jpg" alt="Dr. Alan Smith portrait" />
+            <figcaption>Dr. Alan Smith discussing responsible AI.</figcaption>
+          </figure>
+          <p>Dr. Smith presented on responsible AI practices at TechCon 2021, emphasizing transparency and measurable fairness in machine learning systems.</p>
+        </section>
+
+        <section class="speaker" aria-labelledby="speaker-priya">
+          <h3 id="speaker-priya">Priya Patel — Product Lead, OpenUI</h3>
+          <figure>
+            <img src="images/speakers/priya-patel.jpg" alt="Priya Patel smiling at a panel" />
+            <figcaption>Priya Patel on UX and inclusive product design.</figcaption>
+          </figure>
+          <p>Priya's 2022 workshop on inclusive product design guided teams to build interfaces accessible to a broader audience.</p>
+        </section>
+      </article>
     </main>
 
     <footer>
