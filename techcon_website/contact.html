@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <style>
+      .map-responsive { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+      .map-responsive iframe { position: absolute; top:0; left:0; width:100%; height:100%; border:0; }
+      .contact-list { list-style: none; padding: 0; }
+      .contact-list li { margin-bottom: 0.5rem; }
+      form div { margin-bottom: 0.75rem; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="contact-info">
+        <h2 id="contact-info">Contact Information</h2>
+        <ul class="contact-list">
+          <li>Email: <a href="mailto:email@example.com">email@example.com</a></li>
+          <li>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></li>
+          <li>Address: 123 Conference Way, Cityville, Country</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="social-media">
+        <h2 id="social-media">Follow Us</h2>
+        <ul>
+          <li><a href="https://twitter.com/techcon" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          <li><a href="https://www.linkedin.com/company/techcon" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://www.facebook.com/techcon" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="location">
+        <h2 id="location">Venue Location</h2>
+        <div class="map-responsive">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093747!2d144.95373531531652!3d-37.81627974202171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f3b1df%3A0x5045675218ce6e0!2sConvention%20Centre!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="TechCon venue location">
+          </iframe>
+        </div>
+      </section>
+
+      <section aria-labelledby="contact-form">
+        <h2 id="contact-form">Contact Us</h2>
+        <form action="#" method="post">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <div>
+            <button type="submit">Send Message</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; copyright reserved.</p>
+    </footer>
+  </body>
+</html>
